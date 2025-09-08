@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
 import { AnimatedCounter } from './AnimatedCounter';
 import { hackathonData } from '../data/hackathonData';
-import qr from '../public/Pay.jpg';
+import qr from '../public/upi_payment_qr.png';
+
 
 export const Registration: React.FC = () => {
   const [ref, inView] = useInView();
