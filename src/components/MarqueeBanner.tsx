@@ -12,10 +12,10 @@ export const MarqueeBanner: React.FC = () => {
     <div className="overflow-hidden border-t-2 border-b-2 border-yellow-400 p-2">
       <div className="whitespace-nowrap animate-marquee inline-block">
         <span style={spanStyle}>
-          🚀 Problem statements will be released on 11/09/2025 🚀
+          🚀 Problem statements will be released on 12/09/2025 🚀
         </span>
         <span style={spanStyle}>
-          🚀 Problem statements will be released on 11/09/2025 🚀
+          🚀 Problem statements will be released on 12/09/2025 🚀
         </span>
        
       </div>
