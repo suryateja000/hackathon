@@ -91,7 +91,7 @@ export const Registration: React.FC = () => {
                 After registration, you'll receive a unique Team Registration Number
               </p>
               <motion.a
-                href="https://forms.gle/cBPeyrBwh768X7F56"
+                href="https://forms.gle/Dfb48qCjiV1foMQV8"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(56, 189, 248, 0.6)' }}
