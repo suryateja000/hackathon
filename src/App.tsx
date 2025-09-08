@@ -9,6 +9,7 @@ import { Sponsors } from './components/Sponsors';
 import { Contact } from './components/Contact';
 import { Footer } from './components/Footer';
 import { CursorSpotlight } from './components/CursorSpotlight';
+import {Themes} from "./components/Themes";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Rules />
         <Registration />
         <Schedule />
+        <Themes />
         {/* <TimeTracking />
         <EventGallery /> */}
         <Sponsors />

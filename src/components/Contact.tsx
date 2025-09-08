@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { hackathonData } from '../data/hackathonData';
+import name from '../public/certificateofparticipationsupersus_sample.jpg';
 
 export const Contact: React.FC = () => {
   const { event, contact, socialMedia } = hackathonData;
@@ -99,6 +100,32 @@ export const Contact: React.FC = () => {
           </div>
         </div>
       </div>
+      <div className='px-3'>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-center mt-20">
+            <span className="bg-gradient-to-r from-sky-400 to-blue-500 bg-clip-text text-transparent">
+              Sample Certificate
+            </span>
+          </h2>
+                <section className="relative w-full max-w-3xl mx-auto mt-5">
+        
+          <img
+            src={name}
+            alt="Hackathon Certificate Sample"
+            className="w-full h-auto select-none pointer-events-none rounded-xl shadow-md border border-slate-700 p-1"
+            onContextMenu={(e: React.MouseEvent) => e.preventDefault()}
+            draggable={false}
+          />
+          
+
+          {/* <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+            <p className="text-white text-4xl font-extrabold opacity-20 rotate-12 select-none">
+              SAMPLE CERTIFICATE
+            </p>
+          </div> */}
+      </section>
+      </div>
+
+
     </section>
   );
 };

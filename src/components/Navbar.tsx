@@ -12,8 +12,10 @@ export const Navbar: React.FC = () => {
     { id: 'about', label: 'About' },
     { id: 'schedule', label: 'Schedule' },
     { id: 'rules', label: 'Rules' },
+    { id: 'themes', label: 'Themes'},
     { id: 'sponsors', label: 'Sponsors' },
-    { id: 'contact', label: 'Contact' }
+    { id: 'contact', label: 'Contact' },
+    
   ]).current;
 
   // 1) Scroll shadow/contrast
