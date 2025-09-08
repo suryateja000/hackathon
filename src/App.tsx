@@ -16,9 +16,11 @@ function App() {
     <div className="min-h-screen bg-gray-900 text-white relative">
       {/* Global violet spotlight behind content */}
       <CursorSpotlight/>
-
       <Navbar />
+            
+
       <main>
+        
         <Hero />
         <About />
         <Rules />

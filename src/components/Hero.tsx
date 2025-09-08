@@ -8,10 +8,13 @@ import Acm from '../public/ACM.png';
 import hero1 from '../public/hero1.png';
 import hero2 from '../public/hero2.png';
 import hero3 from '../public/hero3.png';
+import hero5 from '../public/hero-3.png';
+
 import hero4 from '../public/hero4.png';
 import name from '../public/name.png';
+import { MarqueeBanner } from '../components/MarqueeBanner';
 
-const WEB_IMAGES = { A: hero1, B: hero2, C: hero3, D: hero4 };
+const WEB_IMAGES = { A: hero1, B: hero2, C: hero5, D: hero4 };
 
 const container = {
   hidden: { opacity: 0 },
@@ -32,7 +35,8 @@ export const Hero: React.FC = () => {
   ];
 
   return (
-    <section id="home" className="relative w-full h-screen overflow-hidden">
+    <>
+<section id="home" className="relative w-full min-h-[93.5vh] overflow-x-auto overflow-y-hidden">
       <div
         aria-hidden
         className="absolute inset-0"
@@ -73,7 +77,7 @@ export const Hero: React.FC = () => {
           <img
             src={WEB_IMAGES.C}
             alt=""
-            className="absolute bottom-[1%] left-[1%] lgd:bottom-[12%] lg:left-[32%] w-[90px] md:w-[130px] lg:w-[120px] rotate-[3deg] drop-shadow-[0_8px_24px_rgba(0,194,255,0.30)]"
+            className="absolute bottom-[1%] left-[1%] lgd:bottom-[12%] lg:left-[32%] w-[90px] md:w-[130px] lg:w-[100px] rotate-[3deg] drop-shadow-[0_8px_24px_rgba(0,194,255,0.30)]"
           />
         )}
         {/* Bottom-right */}
@@ -81,13 +85,13 @@ export const Hero: React.FC = () => {
           <img
             src={WEB_IMAGES.D}
             alt=""
-            className="absolute bottom-[1%] right-[1%] lg:bottom-[5%] lg:right-[24%] w-[138px] md:w-[150px] lg:w-[230px] rotate-[-8deg] drop-shadow-[0_10px_30px_rgba(99,102,241,0.32)]"
+            className="absolute bottom-[1%] right-[1%] lg:bottom-[3%] lg:right-[28%] w-[138px] md:w-[150px] lg:w-[180px] rotate-[-3deg] drop-shadow-[0_10px_30px_rgba(99,102,241,0.32)]"
           />
         )}
       </div>
 
       {/* Centered content (name removed) */}
-      <img src={name} alt="VISTA" className="absolute top-24   left-1/2 -translate-x-1/2 w-96 md:w-[300px] lg:w-[550px] opacity-90" />
+      <img src={name} alt="VISTA" className="absolute top-20   left-1/2 -translate-x-1/2 w-96  md:w-[300px] lg:w-[550px] opacity-90" />
       <div className="relative top-44 lg:top-56 z-10 min-h-[80vh] grid place-items-center px-6 py-20 md:py-24">
         <motion.div
           variants={container}
@@ -98,7 +102,7 @@ export const Hero: React.FC = () => {
           {/* Chips */}
           <motion.div
             variants={item}
-            className="mt-2 flex flex-wrap items-center justify-center gap-3 md:gap-4 text-slate-100"
+            className=" flex flex-wrap items-center justify-center gap-2 md:gap-4 text-slate-100"
           >
             <div className="flex items-center gap-3 rounded-full border border-sky-400/25 bg-slate-900/60 px-4 py-2 backdrop-blur">
               <span className="h-2 w-2 rounded-full bg-sky-300" />
@@ -120,10 +124,10 @@ export const Hero: React.FC = () => {
           </motion.div>
 
           {/* CTA */}
-          <motion.div variants={item} className="mt-7">
+          <motion.div variants={item} className="mt-8">
             <a
               href="#registration"
-              className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-8 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
             >
               Register Now <span aria-hidden className="ml-2">→</span>
             </a>
@@ -141,6 +145,9 @@ export const Hero: React.FC = () => {
           </motion.div>
         </motion.div>
       </div>
+      
     </section>
+    <MarqueeBanner />
+    </>
   );
 };

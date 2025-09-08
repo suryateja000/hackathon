@@ -86,7 +86,7 @@ export const hackathonData = {
             description: "Welcome and kick-off"
         },
         {
-            time: "1:00 PM",
+            time: "12:00 PM",
             event: "Phase 1 - PowerPoint Presentation",
             description: "Participants present initial ideas"
         },
@@ -101,6 +101,11 @@ export const hackathonData = {
             description: "Development and progress review"
         },
         {
+            time: "8:00 PM - 9:00 PM",
+            event: "Dinner",
+            description: "Dinner and relaxation"
+        },
+	{
             time: "2:00 AM",
             event: "Phase 3",
             description: "Final development sprint"
