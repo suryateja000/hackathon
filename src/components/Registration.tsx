@@ -62,51 +62,59 @@ export const Registration: React.FC = () => {
         </motion.div>
 
         {/* Registration + Payment */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"> */}
           {/* Registration Card (iconless CTA) */}
-          <motion.div
-            initial={{ opacity: 0, x: -50 }}
-            animate={inView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-blue-500/40 transition-all duration-300"
-          >
-            <h3 className="text-2xl font-bold text-white mb-6">Quick Registration</h3>
+          {/* Registration + Payment */}
+<div className="flex justify-center">
+  {/* Registration Card */}
+  <motion.div
+    initial={{ opacity: 0, x: -50 }}
+    animate={inView ? { opacity: 1, x: 0 } : {}}
+    transition={{ duration: 0.8, delay: 0.4 }}
+    className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 
+               hover:border-blue-500/40 transition-all duration-300 text-center max-w-lg w-full"
+  >
+    <h3 className="text-2xl font-bold text-white mb-6">Quick Registration</h3>
 
-            <div className="space-y-4 mb-8">
-              {[
-                { c: 'bg-sky-400', t: 'Fill out the registration form' },
-                { c: 'bg-blue-400', t: 'Submit your team details' },
-                { c: 'bg-cyan-400', t: 'Complete payment' },
-                { c: 'bg-green-400', t: 'Receive confirmation email' },
-              ].map((s) => (
-                <div key={s.t} className="flex items-center space-x-3 text-gray-300">
-                  <div className={`w-2 h-2 ${s.c} rounded-full`} />
-                  <span>{s.t}</span>
-                </div>
-              ))}
-            </div>
+    <div className="space-y-4 mb-8">
+      {[
+        { c: 'bg-sky-400', t: 'Fill out the registration form' },
+        { c: 'bg-blue-400', t: 'Submit your team details' },
+        { c: 'bg-cyan-400', t: 'Complete payment' },
+        { c: 'bg-green-400', t: 'Receive confirmation email' },
+      ].map((s) => (
+        <div key={s.t} className="flex items-center space-x-3 text-gray-300">
+          <div className={`w-2 h-2 ${s.c} rounded-full`} />
+          <span>{s.t}</span>
+        </div>
+      ))}
+    </div>
 
-            <div className="text-center">
-              <p className="text-gray-400 mb-4">Registration Deadline: {event.registrationDeadline}</p>
-              <p className="text-sky-400 mb-6 font-semibold">
-                After registration, you'll receive a unique Team Registration Number
-              </p>
-              <motion.a
-                href="https://forms.gle/Dfb48qCjiV1foMQV8"
-                target="_blank"
-                rel="noopener noreferrer"
-                whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(56, 189, 248, 0.6)' }}
-                whileTap={{ scale: 0.95 }}
-                className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 hover:from-sky-600 hover:to-blue-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300 shadow-lg"
-              >
-                <span>Register Your Team</span>
-                <span aria-hidden className="opacity-90">→</span>
-              </motion.a>
-            </div>
-          </motion.div>
+    <div className="text-center">
+      <p className="text-gray-400 mb-4">Registration Deadline: {event.registrationDeadline}</p>
+      <p className="text-sky-400 mb-6 font-semibold">
+        After registration, you'll receive a unique Team Registration Number
+      </p>
+      <motion.a
+        href="https://forms.gle/Dfb48qCjiV1foMQV8"
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(56, 189, 248, 0.6)' }}
+        whileTap={{ scale: 0.95 }}
+        className="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500 to-blue-600 
+                   hover:from-sky-600 hover:to-blue-700 text-white font-bold py-4 px-8 
+                   rounded-full text-lg transition-all duration-300 shadow-lg"
+      >
+        <span>Register Your Team</span>
+        <span aria-hidden className="opacity-90">→</span>
+      </motion.a>
+    </div>
+  </motion.div>
+</div>
+
 
           {/* Payment Card (no icons) */}
-          <motion.div
+          {/* <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={inView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.6 }}
@@ -137,8 +145,8 @@ export const Registration: React.FC = () => {
                 </p>
               </div>
             </div>
-          </motion.div>
-        </div>
+          </motion.div> */}
+        {/* </div> */}
 
         {/* Important Notice */}
         <motion.div
