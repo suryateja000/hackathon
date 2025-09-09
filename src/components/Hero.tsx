@@ -129,7 +129,7 @@ export const Hero: React.FC = () => {
               href="#registration"
               className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
             >
-              Register Now <span aria-hidden className="ml-2">→</span>
+              Registrations are closed <span aria-hidden className="ml-2">→</span>
             </a>
           </motion.div>
 

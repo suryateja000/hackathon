@@ -96,7 +96,8 @@ export const Registration: React.FC = () => {
         After registration, you'll receive a unique Team Registration Number
       </p>
       <motion.a
-        href="https://forms.gle/Dfb48qCjiV1foMQV8"
+        // href="https://forms.gle/Dfb48qCjiV1foMQV8"
+        href="#"
         target="_blank"
         rel="noopener noreferrer"
         whileHover={{ scale: 1.05, boxShadow: '0 0 30px rgba(56, 189, 248, 0.6)' }}
@@ -105,7 +106,7 @@ export const Registration: React.FC = () => {
                    hover:from-sky-600 hover:to-blue-700 text-white font-bold py-4 px-8 
                    rounded-full text-lg transition-all duration-300 shadow-lg"
       >
-        <span>Register Your Team</span>
+        <span>Registrations are Closed !!</span>
         <span aria-hidden className="opacity-90">→</span>
       </motion.a>
     </div>
@@ -155,8 +156,8 @@ export const Registration: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.8 }}
           className="mt-16 bg-gradient-to-r from-orange-800/20 to-red-800/20 border border-orange-500/30 rounded-xl p-6 text-center"
         >
-          <h4 className="text-xl font-bold text-orange-400 mb-2">⚡ Limited Seats Available!</h4>
-          <p className="text-gray-300">Only few participants will be selected. Register early to secure your spot!</p>
+          <h4 className="text-xl font-bold text-orange-400 mb-2">⚡ Registrations are Closed!</h4>
+          <p className="text-gray-300">Prepare yourself for the challenge ahead!</p>
         </motion.div>
       </div>
     </section>
