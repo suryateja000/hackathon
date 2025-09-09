@@ -129,8 +129,8 @@ export const Registration: React.FC = () => {
               </p>
               <p className="text-gray-400 text-sm">Fee includes meals, refreshments, and participation kit</p>
               <div className="pt-4 border-t border-gray-700">
-                <p className="text-blue-400 font-semibold">UPI ID: 9440550323@ybl</p>
-                <p className="text-blue-400 font-semibold">Banking name: SANDHYARANI GUTTULA</p>
+                <p className="text-blue-400 font-semibold">UPI ID: 8885524460@ybl</p>
+                <p className="text-blue-400 font-semibold">Banking name: KALLEPALLI ROHITH KUMAR</p>
                 <p className="text-gray-400 text-sm mt-1">Send payment screenshot to confirm registration</p>
                 <p className="text-yellow-400 text-sm mt-2 font-semibold">
                   Include your Team Name in payment description
