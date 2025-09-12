@@ -6,8 +6,9 @@ import IMPOSTOR from "../public/impost.jpg";
 import CREW from "../public/crewup.jpg";
 import SHIP from "../public/ship.png";
 import MAP from "../public/starategize.jpg";
-import poster from "../public/poster.png";
+import po from "../public/poster.png";
 
+const poster = po;
 
 const CARD_IMAGES = {
   CREW: CREW,
