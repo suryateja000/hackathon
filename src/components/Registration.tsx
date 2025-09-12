@@ -4,12 +4,17 @@ import { useInView } from '../hooks/useInView';
 import { AnimatedCounter } from './AnimatedCounter';
 import { hackathonData } from '../data/hackathonData';
 import qr from '../public/upi_payment_qr_2.png';
+import ship from '../public/ship.png';
+import { ProblemStatement } from './ProblemStatements';
+
 
 
 export const Registration: React.FC = () => {
   const [ref, inView] = useInView();
-  const { event, stats } = hackathonData;
-
+const item = {
+  hidden: { opacity: 0, y: 20, scale: 0.98 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6, ease: 'easeOut' } },
+};
   // Stats data (icons removed)
 
   return (
@@ -25,17 +30,24 @@ export const Registration: React.FC = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-sky-300 to-blue-400 bg-clip-text text-transparent">
-              Register for Hackathon 4.0
+              Problem Statements
             </span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto">
-            Don't miss this opportunity to showcase your skills, learn from experts, and compete for amazing prizes!
-          </p>
+          
         </motion.div>
+        <img src={ship} alt="Problem Statements" className="mx-auto mb-16 rounded-xl shadow-lg  h-42" />
+        <motion.div variants={item} className="mt-8 justify-center items-center flex">
+                    <a
+                      href='ProblemStatement'
+                      className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
+                    >
+                      Click here to view Problem Statements <span aria-hidden className="ml-2">→</span>
+                    </a>
+                  </motion.div>
 
 
         {/* Registration Fee Info */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.3 }}
@@ -59,15 +71,15 @@ export const Registration: React.FC = () => {
               <span className="text-gray-300">Participation Certificate</span>
             </div>
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Registration + Payment */}
         {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"> */}
           {/* Registration Card (iconless CTA) */}
           {/* Registration + Payment */}
-<div className="flex justify-center">
+{/* <div className="flex justify-center">
   {/* Registration Card */}
-  <motion.div
+  {/* <motion.div
     initial={{ opacity: 0, x: -50 }}
     animate={inView ? { opacity: 1, x: 0 } : {}}
     transition={{ duration: 0.8, delay: 0.4 }}
@@ -94,8 +106,8 @@ export const Registration: React.FC = () => {
       <p className="text-gray-400 mb-4">Registration Deadline: {event.registrationDeadline}</p>
       <p className="text-sky-400 mb-6 font-semibold">
         After registration, you'll receive a unique Team Registration Number
-      </p>
-      <motion.a
+      </p> */}
+      {/* <motion.a
         // href="https://forms.gle/Dfb48qCjiV1foMQV8"
         href="#"
         target="_blank"
@@ -108,10 +120,10 @@ export const Registration: React.FC = () => {
       >
         <span>Registrations are Closed !!</span>
         <span aria-hidden className="opacity-90">→</span>
-      </motion.a>
-    </div>
+      </motion.a> */}
+    {/* </div>
   </motion.div>
-</div>
+</div>  */}
 
 
           {/* Payment Card (no icons) */}
@@ -150,7 +162,7 @@ export const Registration: React.FC = () => {
         {/* </div> */}
 
         {/* Important Notice */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.8, delay: 0.8 }}
@@ -158,7 +170,7 @@ export const Registration: React.FC = () => {
         >
           <h4 className="text-xl font-bold text-orange-400 mb-2">⚡ Registrations are Closed!</h4>
           <p className="text-gray-300">Prepare yourself for the challenge ahead!</p>
-        </motion.div>
+        </motion.div> */}
       </div>
     </section>
   );
