@@ -130,7 +130,7 @@ export const Hero: React.FC = () => {
             to="/problem-statement" // ✅ Correct route (make sure this exists in App.jsx)
             className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
           >
-             Problem Statements...
+             Problem Statements ..
             <span aria-hidden className="ml-2">
               →
             </span>
