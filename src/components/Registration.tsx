@@ -9,6 +9,7 @@ import { ProblemStatement } from './ProblemStatements';
 
 
 
+
 export const Registration: React.FC = () => {
   const [ref, inView] = useInView();
 const item = {
