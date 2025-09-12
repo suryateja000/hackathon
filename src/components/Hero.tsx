@@ -7,9 +7,7 @@ import gfg from '../public/Gfg.png';
 import Acm from '../public/ACM.png';
 import hero1 from '../public/hero1.png';
 import hero2 from '../public/hero2.png';
-import hero3 from '../public/hero3.png';
 import hero5 from '../public/hero-3.png';
-
 import hero4 from '../public/hero4.png';
 import name from '../public/name.png';
 import { MarqueeBanner } from '../components/MarqueeBanner';
