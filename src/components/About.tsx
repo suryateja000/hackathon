@@ -6,7 +6,7 @@ import IMPOSTOR from "../public/impost.jpg";
 import CREW from "../public/crewup.jpg";
 import SHIP from "../public/ship.png";
 import MAP from "../public/starategize.jpg";
-import poster from "../public/poster.png";
+import poster from "../public/Poster.png";
 
 
 // Optional card banner images (leave empty to render CSS gradient header instead)
