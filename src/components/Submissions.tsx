@@ -12,7 +12,7 @@ export const Submissions: React.FC = () => {
 
   return (
     <section
-      id="Submissions"
+      id="submissions"
       className="py-20 bg-gradient-to-br from-slate-950 via-slate-900 to-blue-950/30"
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -44,7 +44,7 @@ export const Submissions: React.FC = () => {
   <div className="flex flex-wrap justify-center items-center gap-6 mb-4">
     <motion.div variants={item} className="mt-8">
       <a
-        href=""
+        href="https://forms.gle/Zg5aw7qjYaAjYCMt5"
         className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
       >
         Submission form <span aria-hidden className="ml-2">→</span>
