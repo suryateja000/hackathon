@@ -15,6 +15,8 @@ export const Navbar: React.FC = () => {
     { id: 'themes', label: 'Themes'},
     { id: 'sponsors', label: 'Sponsors' },
     { id: 'contact', label: 'Contact' },
+        { id: 'submissions', label: 'Submissions' },
+
     
   ]).current;
 

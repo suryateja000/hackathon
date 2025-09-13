@@ -7,10 +7,7 @@ import gfg from '../public/Gfg.png';
 import Acm from '../public/ACM.png';
 import hero1 from '../public/hero1.png';
 import hero2 from '../public/hero2.png';
-import hero3 from '../public/hero3.png';
 import hero5 from '../public/hero-3.png';
-import { Link } from 'react-router-dom'; // ✅ Import Link from React Router
-
 import hero4 from '../public/hero4.png';
 import name from '../public/name.png';
 import { MarqueeBanner } from '../components/MarqueeBanner';
@@ -125,17 +122,14 @@ export const Hero: React.FC = () => {
           </motion.div>
 
           {/* CTA */}
-          <motion.div variants={item} className="mt-8 justify-center items-center flex">
-          <Link
-            to="/problem-statement" // ✅ Correct route (make sure this exists in App.jsx)
-            className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
-          >
-             Problem Statements ..
-            <span aria-hidden className="ml-2">
-              →
-            </span>
-          </Link>
-        </motion.div>
+          <motion.div variants={item} className="mt-8">
+            <a
+              href="#Submissions"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
+            >
+              Submission form <span aria-hidden className="ml-2">→</span>
+            </a>
+          </motion.div>
 
           {/* Sponsors pill */}
           <motion.div variants={item} className="mt-7">

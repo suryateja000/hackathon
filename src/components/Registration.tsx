@@ -1,24 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { useInView } from '../hooks/useInView';
-import { AnimatedCounter } from './AnimatedCounter';
-import { hackathonData } from '../data/hackathonData';
-import qr from '../public/upi_payment_qr_2.png';
-import ship from '../public/ship.png';
-import { Link } from 'react-router-dom'; // ✅ Import Link from React Router
+import pb1 from '../public/pb1.jpg';
+import pb2 from '../public/pb2.jpg';
 
 export const Registration: React.FC = () => {
   const [ref, inView] = useInView();
-
-  const item = {
-    hidden: { opacity: 0, y: 20, scale: 0.98 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      scale: 1,
-      transition: { duration: 0.6, ease: 'easeOut' },
-    },
-  };
 
   return (
     <section
@@ -36,7 +23,7 @@ export const Registration: React.FC = () => {
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-sky-300 to-blue-400 bg-clip-text text-transparent">
-              Problem Statements
+              Problem Statements for Hackathon 4.0
             </span>
           </h2>
           <p className="text-gray-400">
@@ -44,24 +31,25 @@ export const Registration: React.FC = () => {
           </p>
         </motion.div>
 
-        <img
-          src={ship}
-          alt="Problem Statements"
-          className="mx-auto mb-16 rounded-xl shadow-lg h-42"
-        />
-
-        {/* ✅ Smooth navigation with Link */}
-        <motion.div variants={item} className="mt-8 justify-center items-center flex">
-          <Link
-            to="/problem-statement" // ✅ Correct route (make sure this exists in App.jsx)
-            className="inline-flex items-center rounded-full bg-gradient-to-r from-[#00C2FF] to-[#6B8CFF] px-4 py-4 font-semibold text-white shadow-[0_0_22px_rgba(0,194,255,0.45)] ring-1 ring-white/15 hover:from-[#12D1FF] hover:to-[#7B9BFF] transition-colors"
-          >
-            Click here to view Problem Statements
-            <span aria-hidden className="ml-2">
-              →
-            </span>
-          </Link>
-        </motion.div>
+        <motion.div
+  initial={{ opacity: 0, x: -50 }}
+  animate={inView ? { opacity: 1, x: 0 } : {}}
+  transition={{ duration: 0.8, delay: 0.4 }}
+  className="bg-slate-800/50 backdrop-blur-sm border border-slate-700 rounded-2xl p-8 hover:border-blue-500/40 transition-all duration-300 text-center w-full  mx-auto"
+>
+  <div className="flex flex-wrap justify-center items-center gap-6 mb-4">
+    <img
+      src={pb1}
+      alt="Problem Statement 1"
+      className="w-46 h-46 object-cover rounded-lg"
+    />
+    <img
+      src={pb2}
+      alt="Problem Statement 2"
+      className="w-46 h-46 object-cover rounded-lg"
+    />
+  </div>
+</motion.div>
       </div>
     </section>
   );

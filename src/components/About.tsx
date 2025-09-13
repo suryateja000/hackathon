@@ -9,7 +9,6 @@ import MAP from "../public/starategize.jpg";
 import poster from "../public/Poster.png";
 
 
-// Optional card banner images (leave empty to render CSS gradient header instead)
 const CARD_IMAGES = {
   CREW: CREW,
   MAP: MAP,

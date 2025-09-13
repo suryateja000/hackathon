@@ -13,6 +13,7 @@ import { Footer } from "./components/Footer";
 import { CursorSpotlight } from "./components/CursorSpotlight";
 import { Themes } from "./components/Themes";
 import { ProblemStatement } from "./components/ProblemStatements"; // ✅ Make sure this exists
+import {Submissions} from "./components/Submissions"; // ✅ Make sure this exists
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
                   <About />
                   <Rules />
                   <Registration />
+                                    <Submissions/>
+
                   <Schedule />
                   <Themes />
                   <Sponsors />
